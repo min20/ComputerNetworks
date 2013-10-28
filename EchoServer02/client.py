@@ -9,8 +9,8 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((HOST, PORT))
 for i in xrange(100):
   print i
-  time.sleep(1)
-s.sendall('hello')
+  time.sleep(0.1)
+s.sendall('quit')
 data = s.recv(1024)
 s.close()
 print 'Received:', data

@@ -12,7 +12,7 @@ while True:
     print 'Connected by', addr
     for i in xrange(100):
         print i
-        time.sleep(1)
+        time.sleep(0.1)
     cmd = '';
     while 1:
         data = conn.recv(1024)
